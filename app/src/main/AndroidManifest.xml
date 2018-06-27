@@ -61,7 +61,7 @@
             android:value="ModelName" />
         <meta-data
             android:name="AA_MODELS"
-            android:value="com.tracking.store.db.Store, com.tracking.store.db.OrderItem, com.tracking.store.db.InventoryItem, com.tracking.store.db.StoreVisit,  com.tracking.store.db.CompetitiveItem, com.tracking.store.db.Area, com.tracking.store.db.Town, com.tracking.store.db.SubSection, com.tracking.store.db.Names, com.tracking.store.db.TrackerLogs " />
+            android:value="com.tracking.store.db.Store, com.tracking.store.db.OrderItem, com.tracking.store.db.InventoryItem, com.tracking.store.db.StoreVisit,  com.tracking.store.db.CompetitiveItem, com.tracking.store.db.Area, com.tracking.store.db.Town,  com.tracking.store.db.Names, com.tracking.store.db.TrackerLogs " />
 
         <activity android:name="com.tracking.storedev.ShopProfileAtivity" />
 
