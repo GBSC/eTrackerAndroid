@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.akexorcist:googledirectionlibrary-1.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b8e4aa3f73382f0136768f46f21354f934fa76ed/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b8e4aa3f73382f0136768f46f21354f934fa76ed/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.akexorcist/googledirectionlibrary/1.1.1/2e04e36c311c6092c8899997372f4e0b943e829e/googledirectionlibrary-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tracking.storedev.CreateAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/tool_bar_background">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/toolbar_title"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            app:srcCompat="@mipmap/ic_left_arrow" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/btnBack"
+            android:fontFeatureSettings="smcp"
+            android:text="Create Account"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/journey_recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/tool_bar_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_gravity="left"
+                    android:capitalize="sentences"
+                    android:fontFeatureSettings="smcp"
+                    android:textAllCaps="true"
+                    android:text="Store Details" />
+
+
+                <Button
+                    android:id="@+id/toolbar_checkin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="-5dp"
+                    android:paddingBottom="-5dp"
+                    android:background="@drawable/checkout_button"
+                    android:drawableLeft="@mipmap/ic_checkout"
+                    android:text="Check Out"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/contentCheckin"
+        android:orientation="vertical">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewpagertab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="4dp"
+            app:stl_defaultTabTextColor="@color/colorPrimary"
+            app:stl_distributeEvenly="true"
+            app:stl_indicatorColor="@android:color/holo_red_dark"
+            app:stl_indicatorCornerRadius="1.5dp"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="3dp"
+            app:stl_underlineColor="@android:color/transparent"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewpagertab"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

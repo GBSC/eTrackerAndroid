@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/login_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:src="@mipmap/ic_logo"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView2" />
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Tracking System"
+            android:textColor="@color/white"
+            android:textSize="20dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layoutDirection="ltr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edittext_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_green_border"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Your User Name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:drawableTint="@color/hint_txt"
+                    android:drawableLeft="@mipmap/ic_mail"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FAFAFA"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="13sp">
+
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/edittext_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_green_border"
+                    android:focusable="true"
+                    android:drawableLeft="@mipmap/ic_lock"
+                    android:focusableInTouchMode="true"
+                    android:drawableTint="@color/hint_txt"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Your Password"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FAFAFA"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="13sp"></EditText>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/black"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxRemembPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/white"
+                    android:text="Remember Me"
+                    android:textSize="12sp"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

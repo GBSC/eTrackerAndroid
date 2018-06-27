@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Tracking System Dev</string>
+    <string name="title_activity_login_test">Sign in</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Demo-->
+    <string name="google_maps_key">AIzaSyDgD8HIL_c2BVOoX75TV7llxmfZaxsrlVU</string>
+    <string name="google_map_server_key">AIzaSyBrb2XMt6F8A37iCwSDUbsTj3P1GNYJmD4</string>
+
+    <!-- <string name="google_maps_key">AIzaSyBMIYz7FsZiFcLxwifvP_HvNeRdxCVxbhU</string>
+    <string name="google_map_server_key">AIzaSyBMIYz7FsZiFcLxwifvP_HvNeRdxCVxbhU</string>-->
+
+    <string name="store_registration">Store Registration</string>
+    <string name="journey_cycle">Journey Cycle</string>
+    <string name="report">Report</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internet_connection_problem">Internet connection problem, please try again</string>
+    <string name="please_put_compitative_stock_with_qtry">Please put compitative stock with Quantity</string>
+    <string name="put_order_with_Qty">Please put order with Quantity</string>
+    <string name="please_add_inventory_with_Qty">Please put inventory stock with Quantity</string>
+    <string name="order_added_success">Orders added successfully</string>
+    <string name="inventory_add_success">Inventories added successfully</string>
+    <string name="inventory_added_failed">Inventories added failed</string>
+
+    <string-array name="Products">
+        <item>Eva Cooking Oil – 01 Litre</item>
+        <item>Eva Cooking Oil (1Ltr X 2)</item>
+        <item>Eva Cooking Oil (1Ltr X 5)</item>
+        <item>Eva Cooking Oil (1Ltr X 10)</item>
+        <item>Eva Cooking Oil (2Ltr X 2)</item>
+        <item>Eva Cooking Oil (2Ltr X 5)</item>
+        <item>Eva Cooking Oil (2Ltr X 10)</item>
+        <item>Eva Cooking Oil (2Ltr X 15)</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

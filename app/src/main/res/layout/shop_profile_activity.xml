@@ -1,0 +1,359 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/tool_bar_background">
+
+
+        <TextView
+            android:id="@+id/txtShopkeeperName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="ABC"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/txtShopkeeperName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            app:srcCompat="@mipmap/ic_left_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layoutTop"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_withou_border">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_person" />
+
+                <LinearLayout
+                    android:id="@+id/row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/imageView5">
+
+                    <TextView
+                        android:id="@+id/txtShopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Ali Ahmed"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtShopName"
+                        android:layout_below="@+id/txtShopName"
+                        android:text="Shop Keeper"
+                        android:layout_marginStart="16dp"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/dark"
+                    android:layout_marginStart="44dp"
+                    android:gravity="center|bottom"></View>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_address" />
+
+                <LinearLayout
+                    android:id="@+id/row1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/imageView51">
+
+                    <TextView
+                        android:id="@+id/txtShopAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Ali Ahmed"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtShopAddress"
+                        android:layout_below="@+id/txtShopAddress"
+                        android:text="Address"
+                        android:layout_marginStart="16dp"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/dark"
+                    android:layout_marginStart="44dp"
+                    android:gravity="center|bottom"></View>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_nearest" />
+
+                <LinearLayout
+                    android:id="@+id/ro3w"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/imageView52">
+
+                    <TextView
+                        android:id="@+id/txtNearestLandmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Ali Ahmed"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtNearestLandmark"
+                        android:layout_below="@+id/txtNearestLandmark"
+                        android:text="Near by"
+                        android:layout_marginStart="16dp"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/dark"
+                    android:layout_marginStart="44dp"
+                    android:gravity="center|bottom"></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewf52"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_calender" />
+
+                <LinearLayout
+                    android:id="@+id/ro3w3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/imageViewf52">
+
+                    <TextView
+                        android:id="@+id/txtNextScheduleVisit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView723"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/wrap_content"
+                        android:layout_below="@+id/wrap_content"
+                        android:text="Next Scheduled Visit"
+                        android:layout_marginStart="16dp"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/dark"
+                    android:layout_marginStart="44dp"
+                    android:gravity="center|bottom"></View>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/main_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/main_layout">
+
+            <Button
+                android:id="@+id/btnDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:background="@drawable/button"
+                android:drawableTint="@color/white"
+                android:paddingBottom="-5dp"
+                android:paddingTop="-5dp"
+                android:text="Direction"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btncheckin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/checkin_button"
+                android:drawableLeft="@mipmap/small_checkin"
+                android:drawableTint="@color/white"
+                android:paddingBottom="-5dp"
+                android:paddingRight="20dp"
+                android:paddingTop="-5dp"
+                android:text="Check In"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shopImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/layoutBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        android:src="@mipmap/ic_logo" />
+
+</RelativeLayout>

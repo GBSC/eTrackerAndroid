@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/tool_bar_background">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/toolbar_title"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="6dp"
+            android:tint="@color/white"
+            app:srcCompat="@mipmap/ic_close1" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="7dp"
+            android:layout_toEndOf="@+id/btnBack"
+            android:fontFeatureSettings="smcp"
+            android:text="Store Registration"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/toolbar_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/checkin_button"
+            android:drawableLeft="@mipmap/check_small"
+            android:paddingBottom="-5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="-5dp"
+            android:paddingRight="5dp"
+            android:text="Check In"
+            android:textSize="12sp" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/txtShopName"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Shop Name"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:textColorHint="@color/dark" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel"
+                    >
+
+                    <EditText
+                        android:id="@+id/edittext_shopkeeper"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="Shopkeeper Name"
+                        android:inputType="textCapSentences" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_contactno"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Contact Number"
+                        android:textStyle="bold"
+                        android:maxLength="11"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_landline"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Landline"
+                        android:maxLength="11"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/dropdown_Subsection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_curve">
+
+                    <TextView
+                        android:id="@+id/idSubsection"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toStartOf="@+id/imageView1"
+                        android:gravity="center|left"
+                        android:minHeight="40dp"
+                        android:text="Select SubSection"
+                        android:textColor="#9E9E9E"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@mipmap/spinner_row" />
+
+                </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_address"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="Address"
+                        android:inputType="textCapSentences" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_street"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="Street"
+                        android:inputType="textCapSentences" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_city"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="City"
+                        android:inputType="textCapSentences" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_landmark"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="Landmark"
+                        android:inputType="textCapSentences" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edittext_cnic"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="CNIC"
+                        android:maxLength="13"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/edittext_curve">
+
+                    <RelativeLayout
+                        android:id="@+id/dropdown_Days"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtDaysLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imageView12"
+                            android:gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:text="Select Days"
+                            android:textColor="#9E9E9E"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@mipmap/spinner_row" />
+
+                        <TextView
+                            android:id="@+id/txtDaysSelection"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/txtDaysLabel"
+                            android:layout_marginBottom="4dp"
+                            android:layout_toLeftOf="@+id/imageView12"
+                            android:layout_toStartOf="@+id/imageView12"
+                            android:text="Monday, Tuesday Monday, Tuesday Monday, Tuesday Monday, Tuesday "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Category"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="-15dp"
+                    style="@style/App_LabelStyle"
+                    />
+
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/catg_spinner"
+                    android:background="@android:color/transparent"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    app:ms_dropdown_height="wrap_content"
+                    android:textColor="@color/black"
+                    />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/dark"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Classification"
+                    android:layout_marginBottom="-15dp"
+                    style="@style/App_LabelStyle"
+                    />
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/classificatioin_spinner"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="500dp"
+                    android:layout_height="wrap_content"
+                    app:ms_dropdown_height="wrap_content"
+                    android:textColor="@color/black"
+                    />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/dark"/>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_toStartOf="@+id/imageView1"
+                    android:minHeight="40dp"
+                    android:text="Status"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="#9E9E9E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/classficationRadioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active"
+                        android:buttonTint="@color/login_background"
+                        android:id="@+id/radioButtonActive"
+                        android:checked="false"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inactive"
+                        android:buttonTint="@color/login_background"
+                        android:id="@+id/radioButtonNActive"
+                        android:checked="false"
+                        android:textSize="12sp"
+                         />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/dark"/>
+
+                <RelativeLayout
+                    android:id="@+id/attach_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/box_background_color"
+                        android:src="@mipmap/ic_attach" />
+
+                    <TextView
+                        android:id="@+id/txtFileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView3"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toEndOf="@+id/imageView3"
+                        android:text="Add Photo"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/black"
+                    android:text="Add store"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

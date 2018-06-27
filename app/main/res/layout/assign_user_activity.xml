@@ -1,0 +1,506 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="fill_parent"
+        android:background="@drawable/tool_bar_background"
+        android:layout_height="100dp"
+        >
+
+
+        <TextView
+            android:id="@+id/txtShopkeeperName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Create Account"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/txtShopkeeperName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            app:srcCompat="@mipmap/ic_close" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_above="@id/layoutBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shopImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_person_icon"
+            android:tint="@color/black"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/shopImg"
+            android:layout_marginLeft="5dp"
+            android:tint="@color/white"
+            app:srcCompat="@mipmap/ic_edit" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/layoutTop"
+        >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_above="@+id/relativeLayout2">
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectangle_withou_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="Shopkeeper Username"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Shopkeeper Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Confirm Password"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextConfirmPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Shopkeeper Confirm Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Shopkeeper Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Shopkeeper Name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Shopkeeper Name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Contact Number"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextContactNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Contact Number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Date Of Birth"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextDOB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Day/Month/Year"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Address"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="CNIC Number"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextCNIC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="CNIC Number"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Role"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextRole"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_form2"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Role"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relativeLayout2">
+
+            <Button
+                android:id="@+id/btnAddContact"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:background="@drawable/checkin_button"
+                android:drawableTint="@color/white"
+                android:paddingBottom="-10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="-10dp"
+                android:text="Submit"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="Skip"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

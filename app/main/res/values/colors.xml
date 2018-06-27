@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#002c8c</color>
+    <color name="colorPrimaryDark">#564FC1</color>
+    <color name="login_background">#006792</color>
+    <color name="colorAccent">#cfcccc</color>
+
+    <color name="color_highlight">#F4DA70</color>
+    <color name="yellow">#fdd600</color>
+    <color name="black">#000000</color>
+    <color name="dark">#424242</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="colorButton">#34bfa3</color>
+    <color name="box_background_color">#D8D8D8</color>
+    <color name="hint_txt">#eaeaea</color>
+
+
+    // WayPontMap
+
+    <color name="waypoint_map_view_route_color_planned">#b0bec5</color>
+    <color name="waypoint_map_view_route_color_border_planned">#9198a2</color>
+    <color name="waypoint_map_view_route_color_actual">#00b2ff</color>
+    <color name="waypoint_map_view_route_color_border_actual">#2773c5</color>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tracking.storedev">
+
+    <uses-permission android:name="com.tracking.stor.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name="com.tracking.storedev.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.tracking.storedev.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tracking.storedev.MainActivity" />
+        <activity
+            android:name="com.tracking.storedev.StoreRegistrationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.tracking.storedev.StoreDetailActivity" />
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="Evia" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="5" />
+        <meta-data
+            android:name="AA_Model"
+            android:value="ModelName" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.tracking.store.db.Store, com.tracking.store.db.OrderItem, com.tracking.store.db.InventoryItem, com.tracking.store.db.StoreVisit,  com.tracking.store.db.CompetitiveItem, com.tracking.store.db.Area, com.tracking.store.db.Town, com.tracking.store.db.SubSection, com.tracking.store.db.Names, com.tracking.store.db.TrackerLogs " />
+
+        <activity android:name="com.tracking.storedev.ShopProfileAtivity" />
+
+        <service
+            android:name="com.tracking.storedev.service.CoreService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.tracking.storedev.receiver.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.tracking.storedev.SettingsActivity" />
+        <activity android:name="com.tracking.storedev.CreateAccountActivity" />
+        <activity android:name="com.tracking.storedev.AssignUserActivity" android:windowSoftInputMode="stateHidden"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtItem"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:text="TextView"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight=".3"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_minus"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextQty"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal|center"
+                    android:background="@drawable/edittext_green_border"
+                    android:layout_alignParentTop="true"
+                    android:hint="Qty"
+                    android:maxLength="3"
+                    android:textColor="@color/dark"
+                    android:inputType="number"
+                    android:layout_toEndOf="@+id/btnMinus" />
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/editTextQty"
+                    android:background="@mipmap/ic_add" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height=".3dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignEnd="@+id/itemCheckBox"
+        android:layout_below="@+id/itemCheckBox"
+        android:background="@color/dark" />
+</LinearLayout>
